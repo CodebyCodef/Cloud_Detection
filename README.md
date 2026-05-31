@@ -21,25 +21,25 @@ cloud_detection/
 │   ├── test_classifiers.ipynb      │  Orijinal sınıflandırıcı testleri
 │   └── test_yetenekler.ipynb       │  Orijinal yetenek testleri
 │
-├── cloudynight_data/               ← DATASET 1: cloudynight (yeni eklenen)
+├── cloudynight_data/               ← DATASET 1: cloudynight (Local)
 │   └── example_data/
 │       ├── images/                 │  20 adet FITS gece görüntüsü (.fits.bz2)
 │       └── features/               │  Hazır özellik dosyaları
 │
-├── almeria_data/                   ← DATASET 2: Almería (yeni eklenen)
+├── almeria_data/                   ← DATASET 2: Almería (Local)
 │   ├── kontas_2017/
 │   │   ├── images/                 │  770 JPEG all-sky gündüz görüntüsü
 │   │   └── seg_masks/              │  770 PNG segmentasyon maskesi
 │   └── test_set/                   │  48 test görüntüsü
 │
-├── outputs/                        ← ÇIKTI GÖRSELLERİ (yeni eklenen)
+├── outputs/                        ← ÇIKTI GÖRSELLERİ 
 │   ├── almeria_sonuclar.png        │  Model karşılaştırma grafiği
 │   ├── almeria_hog.png             │  HOG görselleştirmesi
 │   ├── almeria_ornekler.png        │  Örnek görüntü + maskeler
 │   ├── model_karsilastirma.png     │  cloudynight model karşılaştırması
 │   └── ...
 │
-├── scripts/                        ← YARDIMCI SCRIPTLER (yeni eklenen)
+├── scripts/                        ← YARDIMCI SCRIPTLER 
 │   └── goruntu_goster.py           │  cloudynight görüntülerini göster
 │
 ├── main.py                         ← ANA PIPELINE (orijinal DAG kodu)
