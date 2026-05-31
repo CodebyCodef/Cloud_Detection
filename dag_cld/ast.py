@@ -35,7 +35,12 @@ from astropy.coordinates import AltAz
 from astropy.coordinates import Angle
 
 from astropy.coordinates import get_sun
-from astropy.coordinates import get_moon
+try:
+    from astropy.coordinates import get_moon          # astropy < 6.x
+except ImportError:
+    from astropy.coordinates.solar_system import get_body as _get_body
+    def get_moon(time, *args, **kwargs):
+        return _get_body("moon", time, *args, **kwargs)
 
 from astropy.time import Time as tm
 
@@ -217,7 +222,7 @@ class Image:
             fd, hog_image = the_hog(image, orientations=8,
                                     pixels_per_cell=(16, 16),
                                     cells_per_block=(1, 1), visualize=True,
-                                    multichannel=mchannel)
+                                    channel_axis=-1 if mchannel else None)
 
             if show:
                 _, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 4),

@@ -1,0 +1,41 @@
+# =====================================================
+# DAG Cloud Detection — Bağımlılık Listesi
+# Python 3.13 uyumlu (wheel'li sürümler)
+# =====================================================
+
+# --- Temel Bilimsel ---
+# NOT: Python 3.13 için numpy>=2.0 gerekli (1.x wheel yok)
+numpy>=2.0
+scipy>=1.13
+
+# --- Görüntü İşleme ---
+scikit-image>=0.24
+opencv-python>=4.10
+Pillow>=10.0
+matplotlib>=3.9
+
+# --- Astronomi ---
+astropy>=6.0
+astroplan>=0.10
+
+# --- Kaynak Tespiti ---
+sep>=1.4
+
+# --- Makine Öğrenmesi ---
+scikit-learn>=1.5
+
+# --- Derin Öğrenme ---
+tensorflow>=2.20
+
+# --- Notebook ---
+jupyter
+ipykernel
+
+# --- Veri Tablosu ---
+pandas>=2.2
+
+# --- Model Kaydetme ---
+joblib>=1.4
+
+# --- İlerleme Çubuğu ---
+tqdm>=4.65

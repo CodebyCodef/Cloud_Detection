@@ -111,3 +111,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 /clsf/
+
+# Datasets
+almeria_data/
+cloudynight_data/
+.idea/
