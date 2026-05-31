@@ -120,6 +120,6 @@ python scripts/goruntu_goster.py
 
 ## 📚 Kaynaklar
 
-- **DAG Gözlemevi**: https://dag.erzurum.edu.tr
+- **DAG Gözlemevi**: https://trgozlemevleri.gov.tr/
 - **cloudynight dataset**: Mommert (2020), *The Astronomical Journal*, 159. [DOI](https://doi.org/10.3847/1538-3881/ab744f)
 - **Almería dataset**: Fabel et al. (2022), *Atmospheric Measurement Techniques*, 15. [DOI](https://doi.org/10.5194/amt-15-797-2022)
